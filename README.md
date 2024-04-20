@@ -2,7 +2,7 @@
 A super simple workspace switching script for those with multiple monitors.
 
 ## Usage
-Place the script anywhere and change the `first` and `second` variables to the ID's of your monitors in `hyprctl monitors`.
+Place the script anywhere and change the `first` and `second` variables (or `third` aswell if you have the extra screens) to the ID's of your monitors in `hyprctl monitors`.
 Then change `ws_per_monitor` to the amount of workspaces you have set for each monitor.
 
 As an example if you have 3 monitors per workspace your hyprland config your look something like this:
