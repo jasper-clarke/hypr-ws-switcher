@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Set the number of your first/main monitor, find it under `hyrpctl monitors` then find your monitor and it is the ID: value at the top.
 first=1 
 # Set the number of your secondary monitor
