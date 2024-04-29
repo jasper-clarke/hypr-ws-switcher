@@ -25,7 +25,7 @@ elif [[ $monitor == *"$second"* ]]; then
         hyprctl dispatch workspace $calc
     fi
 # elif [[ $monitor == *"$third"* ]]; then
-#     calc=$(($1 + $ws_per_monitor))
+#     calc=$(($1 + ($ws_per_monitor * 2)))
 #     if [[ $2 == "move" ]]; then
 #         hyprctl dispatch movetoworkspace $calc
 #     else
