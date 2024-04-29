@@ -17,14 +17,14 @@ if [[ $monitor == *"$first"* ]]; then
         hyprctl dispatch workspace $1
     fi
 elif [[ $monitor == *"$second"* ]]; then
-    calc=$(calc "$1 + $ws_per_monitor" | sed -e 's/^[ \t]*//' )
+    calc=$(($1 + $ws_per_monitor))
     if [[ $2 == "move" ]]; then
         hyprctl dispatch movetoworkspace $calc
     else
         hyprctl dispatch workspace $calc
     fi
 # elif [[ $monitor == *"$third"* ]]; then
-#     calc=$(calc "$1 + $ws_per_monitor" | sed -e 's/^[ \t]*//' )
+#     calc=$(($1 + $ws_per_monitor))
 #     if [[ $2 == "move" ]]; then
 #         hyprctl dispatch movetoworkspace $calc
 #     else
